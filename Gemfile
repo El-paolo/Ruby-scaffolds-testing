@@ -73,3 +73,4 @@ end
 
 gem "faker"
 gem "pagy"
+gem "ransack", "~> 4.0"

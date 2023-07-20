@@ -3,8 +3,9 @@ class TweetsController < ApplicationController
 
   # GET /tweets or /tweets.json
   def index
-    
-    @pagy, @tweets = pagy(Tweet.all)
+    @q = Tweet.ransack(params[:q])
+    #ransack and pagy
+    @pagy, @tweets = pagy(@q.result)
   end
 
   # GET /tweets/1 or /tweets/1.json
