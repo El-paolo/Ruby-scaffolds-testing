@@ -88,3 +88,4 @@ production:
   database: ruby_scaffolds_testing_production
   username: ruby_scaffolds_testing
   password: <%= ENV["RUBY_SCAFFOLDS_TESTING_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
